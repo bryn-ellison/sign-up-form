@@ -6,8 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Homemade+Apple&family=Manrope:wght@400;800&family=Vibur&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Homemade+Apple&family=Manrope:wght@400;800&family=News+Cycle&family=Vibur&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="image-container">
+        <div id="logo-container">
+            <h1>Submit</h1>
+        </div>
+    </div>
+    <div id="form-container-main">
+        <div id="text-container">
+            <h3>This is a service that will show you the power of sharing your personal information with the internet. Just give us all of your valuable information and your wildest dreams will come true.</h3>
+            <h3>Go on, push that lovely submit button.</h3>
+        </div>
+        <div id="form-container">
+            <form>
+                <h3>Sign up now!</h3>
+                <div id="fields-container">
+                <div class="fields-left">
+                    <label for="first_name">First name</label>
+                    <input type="text" id="first_name" name="first_name">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="fields-right">
+                    <label for="second_name">Last name</label>
+                    <input type="text" id="second_name" name="second_name">
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="phone">
+                    <label for="confirm_password">Confirm password</label>
+                    <input type="password" id="confirm_password" name="confirm_password">
+                </div>
+            </div>
+            </form>
+        </div>
+        <div id="submit-container">
+            <button type="submit">Submit</button>
+            <p><strong>Already have an account? <a href="/sign-in">Log in</a></strong></p>
+        </div>
+    </div>
     
 </body>
 </html>
