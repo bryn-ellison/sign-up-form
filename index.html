@@ -21,37 +21,38 @@
     </div>
     <div id="form-container-main">
         <div id="text-container">
-            <h3>This is a service that will show you the power of sharing your personal information with the internet. Just give us all of your valuable information and your wildest dreams will come true.</h3>
-            <h3>Go on, push that lovely submit button.</h3>
+            <h3>This is a service that will show you the power of sharing your personal information with the internet. Just give us all of your valuable data and your wildest dreams will come true.</h3>
+            <h3>Don't think, just submit.</h3>
         </div>
         <div id="form-container">
-            <form>
+            <form id="form" action="#" method="get">
                 <h3>Sign up now!</h3>
                 <div id="fields-container">
                 <div class="fields-left">
                     <label for="first_name">First name</label>
-                    <input type="text" id="first_name" name="first_name">
+                    <input type="text" id="first_name" name="first_name" required>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
                     <label for="password">Password</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" minlength="6" required>
+                    <div id="error"></div>
                 </div>
                 <div class="fields-right">
                     <label for="second_name">Last name</label>
-                    <input type="text" id="second_name" name="second_name">
+                    <input type="text" id="second_name" name="second_name" required>
                     <label for="phone">Phone</label>
-                    <input type="number" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" placeholder="0798 1234567" pattern="^(?:\s*-*\s*\d){11}$" title="Please enter a valid phone number" required>
                     <label for="confirm_password">Confirm password</label>
-                    <input type="password" id="confirm_password" name="confirm_password">
+                    <input type="password" id="confirm_password" name="confirm_password" minlength="6" required>
                 </div>
             </div>
             </form>
         </div>
         <div id="submit-container">
-            <button type="submit">Submit</button>
+            <button id="submit-button" type="button" form="form">Submit</button>
             <p><strong>Already have an account? <a href="/sign-in">Log in</a></strong></p>
         </div>
     </div>
-    
+    <script  type="text/javascript" src="javascript.js"></script>
 </body>
 </html>

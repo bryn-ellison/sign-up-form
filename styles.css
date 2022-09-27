@@ -110,13 +110,30 @@ label {
 
 input {
     margin-bottom: 2rem;
-    height: 2rem;
+    height: 2.4rem;
     width: 22rem;
     border-radius: 0.2rem;
     border:1px solid #DDDEDF;
     outline: none;
-    -webkit-transition: 0.5s;
-    transition: 0.6s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.input-error {
+    border:1px solid red;
+}
+
+#error {
+    position: absolute;
+    bottom: 35%;
+
+}
+
+.error-msg {
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 0.7rem;
 }
 
 input:focus, input:hover {
@@ -140,8 +157,8 @@ button {
 button:focus, button:hover {
     background-color: #925c50;
     box-shadow: 5px 6px 6px #8b8c8d;
-    -webkit-transition: 0.5s;
-    transition: 0.6s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
 
 #submit-container > p {
